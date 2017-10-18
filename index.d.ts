@@ -2,6 +2,17 @@ import * as feathers from "feathers-typescript-fix";
 
 declare function hooks(): () => void;
 
+declare module "feathers-typescript-fix" {
+    interface Service<T> {
+        before(hooks: hooks.HookMap): Application;
+        after(hooks: hooks.HookMap): Application;
+        hooks(hooks: hooks.HooksObject): Application;
+    }
+    interface Application {
+        hooks(hooks: hooks.HooksObject): Application;
+    }
+}
+
 declare namespace hooks {
     interface Hook {
         <T>(hook: HookProps<T>): Promise<any> | void;
