@@ -1,6 +1,6 @@
 {
-  "name": "feathers-hooks",
-  "version": "2.1.0",
+  "name": "feathers-hooks-typescript-fix",
+  "version": "2.1.0-ts-1",
   "description": "Before and after service method call hooks for easy authorization and processing.",
   "homepage": "https://github.com/feathersjs/feathers-hooks",
   "keywords": [
@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/feathersjs/feathers-hooks.git"
+    "url": "git://github.com/TimMensch/feathers-hooks.git"
   },
   "author": {
     "name": "David Luecke",
